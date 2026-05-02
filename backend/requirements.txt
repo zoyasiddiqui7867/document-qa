@@ -1,0 +1,366 @@
+fastapi
+uvicorn
+python-multipart
+sqlalchemy
+pymysql
+pymupdf
+langchain
+langchain-community
+sentence-transformers
+faiss-cpu
+requests
+
+//Microsoft Windows [Version 10.0.26200.8246]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL 5400\Desktop\document-qa>npm uninstall tailwindcss @tailwindcss/vite
+
+removed 14 packages, and audited 77 packages in 4s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+7 vulnerabilities (2 moderate, 5 high)
+
+To address all issues, run:
+  npm audit fix
+
+Run `npm audit` for details.
+
+C:\Users\DELL 5400\Desktop\document-qa>`npm audit`
+'`npm' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\DELL 5400\Desktop\document-qa>npm audit
+# npm audit report
+
+@xmldom/xmldom  0.9.0 - 0.9.9
+Severity: high
+xmldom: Uncontrolled recursion in XML serialization leads to DoS - https://github.com/advisories/GHSA-2v35-w6hq-6mfw
+xmldom has XML injection through unvalidated DocumentType serialization - https://github.com/advisories/GHSA-f6ww-3ggp-fr8h
+xmldom has XML node injection through unvalidated processing instruction serialization - https://github.com/advisories/GHSA-x6wf-f3px-wcqx
+xmldom has XML node injection through unvalidated comment serialization - https://github.com/advisories/GHSA-j759-j44w-7fr8
+xmldom: XML injection via unsafe CDATA serialization allows attacker-controlled markup insertion - https://github.com/advisories/GHSA-wh4c-j3r5-mjhp
+fix available via `npm audit fix`
+node_modules/@xmldom/xmldom
+
+brace-expansion  <1.1.13
+Severity: moderate
+brace-expansion: Zero-step sequence causes process hang and memory exhaustion - https://github.com/advisories/GHSA-f886-m6hf-6m8v
+fix available via `npm audit fix`
+node_modules/brace-expansion
+
+minimatch  <=3.1.3
+Severity: high
+minimatch has a ReDoS via repeated wildcards with non-matching literal in pattern - https://github.com/advisories/GHSA-3ppc-4f35-3m26
+minimatch has ReDoS: matchOne() combinatorial backtracking via multiple non-adjacent GLOBSTAR segments - https://github.com/advisories/GHSA-7r86-cg39-jmmj
+minimatch ReDoS: nested *() extglobs generate catastrophically backtracking regular expressions - https://github.com/advisories/GHSA-23c5-xmqv-rm74
+fix available via `npm audit fix`
+node_modules/minimatch
+
+picomatch  4.0.0 - 4.0.3
+Severity: high
+Picomatch: Method Injection in POSIX Character Classes causes incorrect Glob Matching - https://github.com/advisories/GHSA-3v7f-55p6-f55p
+Picomatch has a ReDoS vulnerability via extglob quantifiers - https://github.com/advisories/GHSA-c2c7-rcm5-vvqj
+fix available via `npm audit fix`
+node_modules/picomatch
+
+postcss  <8.5.10
+Severity: moderate
+PostCSS has XSS via Unescaped </style> in its CSS Stringify Output - https://github.com/advisories/GHSA-qx2v-qp2m-jg93
+fix available via `npm audit fix`
+node_modules/postcss
+
+rollup  4.0.0 - 4.58.0
+Severity: high
+Rollup 4 has Arbitrary File Write via Path Traversal - https://github.com/advisories/GHSA-mw96-cpmx-2vgc
+fix available via `npm audit fix`
+node_modules/rollup
+
+vite  7.0.0 - 7.3.1
+Severity: high
+vite allows server.fs.deny bypass via backslash on Windows - https://github.com/advisories/GHSA-93m4-6634-74q7
+Vite Vulnerable to Path Traversal in Optimized Deps `.map` Handling - https://github.com/advisories/GHSA-4w7w-66w2-5vf9
+Vite: `server.fs.deny` bypassed with queries - https://github.com/advisories/GHSA-v2wj-q39q-566r
+Vite Vulnerable to Arbitrary File Read via Vite Dev Server WebSocket - https://github.com/advisories/GHSA-p9ff-h696-f583
+fix available via `npm audit fix`
+node_modules/vite
+
+7 vulnerabilities (2 moderate, 5 high)
+
+To address all issues, run:
+  npm audit fix
+
+C:\Users\DELL 5400\Desktop\document-qa>npm audit fix
+
+changed 11 packages, and audited 77 packages in 18s
+
+10 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+C:\Users\DELL 5400\Desktop\document-qa>mkdir backend
+
+C:\Users\DELL 5400\Desktop\document-qa>cd backend
+
+C:\Users\DELL 5400\Desktop\document-qa\backend>python -m venv venv
+
+C:\Users\DELL 5400\Desktop\document-qa\backend>.\venv\Scripts\activate
+
+(venv) C:\Users\DELL 5400\Desktop\document-qa\backend>pip install -r requirements.txt
+Collecting fastapi (from -r requirements.txt (line 1))
+  Downloading fastapi-0.136.1-py3-none-any.whl.metadata (28 kB)
+Collecting uvicorn (from -r requirements.txt (line 2))
+  Downloading uvicorn-0.46.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting python-multipart (from -r requirements.txt (line 3))
+  Downloading python_multipart-0.0.27-py3-none-any.whl.metadata (2.1 kB)
+Collecting sqlalchemy (from -r requirements.txt (line 4))
+  Downloading sqlalchemy-2.0.49-cp313-cp313-win_amd64.whl.metadata (9.8 kB)
+Collecting pymysql (from -r requirements.txt (line 5))
+  Downloading pymysql-1.1.3-py3-none-any.whl.metadata (4.3 kB)
+Collecting pymupdf (from -r requirements.txt (line 6))
+  Downloading pymupdf-1.27.2.3-cp310-abi3-win_amd64.whl.metadata (24 kB)
+Collecting langchain (from -r requirements.txt (line 7))
+  Downloading langchain-1.2.17-py3-none-any.whl.metadata (5.8 kB)
+Collecting langchain-community (from -r requirements.txt (line 8))
+  Using cached langchain_community-0.4.1-py3-none-any.whl.metadata (3.0 kB)
+Collecting sentence-transformers (from -r requirements.txt (line 9))
+  Downloading sentence_transformers-5.4.1-py3-none-any.whl.metadata (17 kB)
+Collecting faiss-cpu (from -r requirements.txt (line 10))
+  Downloading faiss_cpu-1.13.2-cp313-cp313-win_amd64.whl.metadata (7.6 kB)
+Collecting requests (from -r requirements.txt (line 11))
+  Downloading requests-2.33.1-py3-none-any.whl.metadata (4.8 kB)
+Collecting starlette>=0.46.0 (from fastapi->-r requirements.txt (line 1))
+  Downloading starlette-1.0.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting pydantic>=2.9.0 (from fastapi->-r requirements.txt (line 1))
+  Downloading pydantic-2.13.3-py3-none-any.whl.metadata (108 kB)
+Collecting typing-extensions>=4.8.0 (from fastapi->-r requirements.txt (line 1))
+  Using cached typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting typing-inspection>=0.4.2 (from fastapi->-r requirements.txt (line 1))
+  Using cached typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting annotated-doc>=0.0.2 (from fastapi->-r requirements.txt (line 1))
+  Downloading annotated_doc-0.0.4-py3-none-any.whl.metadata (6.6 kB)
+Collecting click>=7.0 (from uvicorn->-r requirements.txt (line 2))
+  Downloading click-8.3.3-py3-none-any.whl.metadata (2.6 kB)
+Collecting h11>=0.8 (from uvicorn->-r requirements.txt (line 2))
+  Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Collecting greenlet>=1 (from sqlalchemy->-r requirements.txt (line 4))
+  Downloading greenlet-3.5.0-cp313-cp313-win_amd64.whl.metadata (3.8 kB)
+Collecting langchain-core<2.0.0,>=1.3.2 (from langchain->-r requirements.txt (line 7))
+  Downloading langchain_core-1.3.2-py3-none-any.whl.metadata (4.4 kB)
+Collecting langgraph<1.2.0,>=1.1.10 (from langchain->-r requirements.txt (line 7))
+  Downloading langgraph-1.1.10-py3-none-any.whl.metadata (8.0 kB)
+Collecting jsonpatch<2.0.0,>=1.33.0 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Using cached jsonpatch-1.33-py2.py3-none-any.whl.metadata (3.0 kB)
+Collecting langchain-protocol>=0.0.10 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading langchain_protocol-0.0.14-py3-none-any.whl.metadata (2.4 kB)
+Collecting langsmith<1.0.0,>=0.3.45 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading langsmith-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting packaging>=23.2.0 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading packaging-26.2-py3-none-any.whl.metadata (3.5 kB)
+Collecting pyyaml<7.0.0,>=5.3.0 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Using cached pyyaml-6.0.3-cp313-cp313-win_amd64.whl.metadata (2.4 kB)
+Collecting tenacity!=8.4.0,<10.0.0,>=8.1.0 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading tenacity-9.1.4-py3-none-any.whl.metadata (1.2 kB)
+Collecting uuid-utils<1.0,>=0.12.0 (from langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading uuid_utils-0.14.1-cp39-abi3-win_amd64.whl.metadata (4.9 kB)
+Collecting jsonpointer>=1.9 (from jsonpatch<2.0.0,>=1.33.0->langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Downloading jsonpointer-3.1.1-py3-none-any.whl.metadata (2.4 kB)
+Collecting langgraph-checkpoint<5.0.0,>=2.1.0 (from langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading langgraph_checkpoint-4.0.3-py3-none-any.whl.metadata (5.2 kB)
+Collecting langgraph-prebuilt<1.1.0,>=1.0.12 (from langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading langgraph_prebuilt-1.0.13-py3-none-any.whl.metadata (5.2 kB)
+Collecting langgraph-sdk<0.4.0,>=0.3.0 (from langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading langgraph_sdk-0.3.13-py3-none-any.whl.metadata (1.6 kB)
+Collecting xxhash>=3.5.0 (from langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading xxhash-3.7.0-cp313-cp313-win_amd64.whl.metadata (13 kB)
+Collecting ormsgpack>=1.12.0 (from langgraph-checkpoint<5.0.0,>=2.1.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading ormsgpack-1.12.2-cp313-cp313-win_amd64.whl.metadata (3.3 kB)
+Collecting httpx>=0.25.2 (from langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting orjson>=3.11.5 (from langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading orjson-3.11.8-cp313-cp313-win_amd64.whl.metadata (43 kB)
+Collecting requests-toolbelt>=1.0.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Using cached requests_toolbelt-1.0.0-py2.py3-none-any.whl.metadata (14 kB)
+Collecting zstandard>=0.23.0 (from langsmith<1.0.0,>=0.3.45->langchain-core<2.0.0,>=1.3.2->langchain->-r requirements.txt (line 7))
+  Using cached zstandard-0.25.0-cp313-cp313-win_amd64.whl.metadata (3.3 kB)
+Collecting anyio (from httpx>=0.25.2->langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading anyio-4.13.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting certifi (from httpx>=0.25.2->langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading certifi-2026.4.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpcore==1.* (from httpx>=0.25.2->langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Collecting idna (from httpx>=0.25.2->langgraph-sdk<0.4.0,>=0.3.0->langgraph<1.2.0,>=1.1.10->langchain->-r requirements.txt (line 7))
+  Downloading idna-3.13-py3-none-any.whl.metadata (8.0 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 1))
+  Using cached annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.3 (from pydantic>=2.9.0->fastapi->-r requirements.txt (line 1))
+  Downloading pydantic_core-2.46.3-cp313-cp313-win_amd64.whl.metadata (6.7 kB)
+Collecting langchain-classic<2.0.0,>=1.0.0 (from langchain-community->-r requirements.txt (line 8))
+  Downloading langchain_classic-1.0.4-py3-none-any.whl.metadata (4.8 kB)
+Collecting aiohttp<4.0.0,>=3.8.3 (from langchain-community->-r requirements.txt (line 8))
+  Downloading aiohttp-3.13.5-cp313-cp313-win_amd64.whl.metadata (8.4 kB)
+Collecting dataclasses-json<0.7.0,>=0.6.7 (from langchain-community->-r requirements.txt (line 8))
+  Using cached dataclasses_json-0.6.7-py3-none-any.whl.metadata (25 kB)
+Collecting pydantic-settings<3.0.0,>=2.10.1 (from langchain-community->-r requirements.txt (line 8))
+  Downloading pydantic_settings-2.14.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting httpx-sse<1.0.0,>=0.4.0 (from langchain-community->-r requirements.txt (line 8))
+  Using cached httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Collecting numpy>=2.1.0 (from langchain-community->-r requirements.txt (line 8))
+  Downloading numpy-2.4.4-cp313-cp313-win_amd64.whl.metadata (6.6 kB)
+Collecting charset_normalizer<4,>=2 (from requests->-r requirements.txt (line 11))
+  Downloading charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl.metadata (41 kB)
+Collecting urllib3<3,>=1.26 (from requests->-r requirements.txt (line 11))
+  Downloading urllib3-2.6.3-py3-none-any.whl.metadata (6.9 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Using cached aiohappyeyeballs-2.6.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Using cached frozenlist-1.8.0-cp313-cp313-win_amd64.whl.metadata (21 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Downloading multidict-6.7.1-cp313-cp313-win_amd64.whl.metadata (5.5 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Using cached propcache-0.4.1-cp313-cp313-win_amd64.whl.metadata (14 kB)
+Collecting yarl<2.0,>=1.17.0 (from aiohttp<4.0.0,>=3.8.3->langchain-community->-r requirements.txt (line 8))
+  Downloading yarl-1.23.0-cp313-cp313-win_amd64.whl.metadata (82 kB)
+Collecting marshmallow<4.0.0,>=3.18.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community->-r requirements.txt (line 8))
+  Downloading marshmallow-3.26.2-py3-none-any.whl.metadata (7.3 kB)
+Collecting typing-inspect<1,>=0.4.0 (from dataclasses-json<0.7.0,>=0.6.7->langchain-community->-r requirements.txt (line 8))
+  Using cached typing_inspect-0.9.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting langchain-text-splitters<2.0.0,>=1.1.2 (from langchain-classic<2.0.0,>=1.0.0->langchain-community->-r requirements.txt (line 8))
+  Downloading langchain_text_splitters-1.1.2-py3-none-any.whl.metadata (3.3 kB)
+Collecting python-dotenv>=0.21.0 (from pydantic-settings<3.0.0,>=2.10.1->langchain-community->-r requirements.txt (line 8))
+  Downloading python_dotenv-1.2.2-py3-none-any.whl.metadata (27 kB)
+Collecting mypy-extensions>=0.3.0 (from typing-inspect<1,>=0.4.0->dataclasses-json<0.7.0,>=0.6.7->langchain-community->-r requirements.txt (line 8))
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting transformers<6.0.0,>=4.41.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading transformers-5.7.0-py3-none-any.whl.metadata (33 kB)
+Collecting huggingface-hub>=0.23.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading huggingface_hub-1.13.0-py3-none-any.whl.metadata (14 kB)
+Collecting torch>=1.11.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading torch-2.11.0-cp313-cp313-win_amd64.whl.metadata (29 kB)
+Collecting scikit-learn>=0.22.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading scikit_learn-1.8.0-cp313-cp313-win_amd64.whl.metadata (11 kB)
+Collecting scipy>=1.0.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading scipy-1.17.1-cp313-cp313-win_amd64.whl.metadata (60 kB)
+Collecting tqdm>=4.0.0 (from sentence-transformers->-r requirements.txt (line 9))
+  Downloading tqdm-4.67.3-py3-none-any.whl.metadata (57 kB)
+Collecting regex>=2025.10.22 (from transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading regex-2026.4.4-cp313-cp313-win_amd64.whl.metadata (41 kB)
+Collecting tokenizers<=0.23.0,>=0.22.0 (from transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading tokenizers-0.22.2-cp39-abi3-win_amd64.whl.metadata (7.4 kB)
+Collecting typer (from transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading typer-0.25.1-py3-none-any.whl.metadata (15 kB)
+Collecting safetensors>=0.4.3 (from transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading safetensors-0.7.0-cp38-abi3-win_amd64.whl.metadata (4.2 kB)
+Collecting filelock>=3.10.0 (from huggingface-hub>=0.23.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading filelock-3.29.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting fsspec>=2023.5.0 (from huggingface-hub>=0.23.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading fsspec-2026.4.0-py3-none-any.whl.metadata (10 kB)
+Collecting hf-xet<2.0.0,>=1.4.3 (from huggingface-hub>=0.23.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading hf_xet-1.4.3-cp37-abi3-win_amd64.whl.metadata (4.9 kB)
+Collecting colorama (from click>=7.0->uvicorn->-r requirements.txt (line 2))
+  Using cached colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Collecting joblib>=1.3.0 (from scikit-learn>=0.22.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading joblib-1.5.3-py3-none-any.whl.metadata (5.5 kB)
+Collecting threadpoolctl>=3.2.0 (from scikit-learn>=0.22.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading threadpoolctl-3.6.0-py3-none-any.whl.metadata (13 kB)
+Collecting setuptools<82 (from torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading setuptools-81.0.0-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting jinja2 (from torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=1.11.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached markupsafe-3.0.3-cp313-cp313-win_amd64.whl.metadata (2.8 kB)
+Collecting shellingham>=1.3.0 (from typer->transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached shellingham-1.5.4-py2.py3-none-any.whl.metadata (3.5 kB)
+Collecting rich>=13.8.0 (from typer->transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=13.8.0->typer->transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached markdown_it_py-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.8.0->typer->transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Downloading pygments-2.20.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.8.0->typer->transformers<6.0.0,>=4.41.0->sentence-transformers->-r requirements.txt (line 9))
+  Using cached mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Downloading fastapi-0.136.1-py3-none-any.whl (117 kB)
+Downloading uvicorn-0.46.0-py3-none-any.whl (70 kB)
+Downloading python_multipart-0.0.27-py3-none-any.whl (29 kB)
+Downloading sqlalchemy-2.0.49-cp313-cp313-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 47.1 kB/s  0:00:47
+Downloading pymysql-1.1.3-py3-none-any.whl (45 kB)
+Downloading pymupdf-1.27.2.3-cp310-abi3-win_amd64.whl (19.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 19.2/19.2 MB 55.8 kB/s  0:07:04
+Downloading langchain-1.2.17-py3-none-any.whl (113 kB)
+Downloading langchain_core-1.3.2-py3-none-any.whl (542 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 542.4/542.4 kB 89.6 kB/s  0:00:09
+Using cached jsonpatch-1.33-py2.py3-none-any.whl (12 kB)
+Downloading langgraph-1.1.10-py3-none-any.whl (173 kB)
+Downloading langgraph_checkpoint-4.0.3-py3-none-any.whl (51 kB)
+Downloading langgraph_prebuilt-1.0.13-py3-none-any.whl (37 kB)
+Downloading langgraph_sdk-0.3.13-py3-none-any.whl (96 kB)
+Downloading langsmith-0.8.0-py3-none-any.whl (393 kB)
+Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Downloading pydantic-2.13.3-py3-none-any.whl (471 kB)
+Downloading pydantic_core-2.46.3-cp313-cp313-win_amd64.whl (2.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 44.7 kB/s  0:00:45
+Using cached pyyaml-6.0.3-cp313-cp313-win_amd64.whl (154 kB)
+Downloading tenacity-9.1.4-py3-none-any.whl (28 kB)
+Using cached typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+Downloading uuid_utils-0.14.1-cp39-abi3-win_amd64.whl (187 kB)
+Using cached langchain_community-0.4.1-py3-none-any.whl (2.5 MB)
+Downloading requests-2.33.1-py3-none-any.whl (64 kB)
+Downloading aiohttp-3.13.5-cp313-cp313-win_amd64.whl (458 kB)
+Downloading charset_normalizer-3.4.7-cp313-cp313-win_amd64.whl (158 kB)
+Using cached dataclasses_json-0.6.7-py3-none-any.whl (28 kB)
+Using cached httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Downloading idna-3.13-py3-none-any.whl (68 kB)
+Downloading langchain_classic-1.0.4-py3-none-any.whl (1.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.0/1.0 MB 48.0 kB/s  0:00:21
+Downloading langchain_text_splitters-1.1.2-py3-none-any.whl (35 kB)
+Downloading marshmallow-3.26.2-py3-none-any.whl (50 kB)
+Downloading multidict-6.7.1-cp313-cp313-win_amd64.whl (45 kB)
+Downloading pydantic_settings-2.14.0-py3-none-any.whl (60 kB)
+Using cached typing_inspect-0.9.0-py3-none-any.whl (8.8 kB)
+Downloading urllib3-2.6.3-py3-none-any.whl (131 kB)
+Downloading yarl-1.23.0-cp313-cp313-win_amd64.whl (87 kB)
+Downloading sentence_transformers-5.4.1-py3-none-any.whl (571 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 571.3/571.3 kB 53.4 kB/s  0:00:09
+Downloading transformers-5.7.0-py3-none-any.whl (10.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.5/10.5 MB 64.6 kB/s  0:03:26
+Downloading huggingface_hub-1.13.0-py3-none-any.whl (660 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 660.6/660.6 kB 58.7 kB/s  0:00:11
+Downloading hf_xet-1.4.3-cp37-abi3-win_amd64.whl (3.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.7/3.7 MB 48.7 kB/s  0:01:18
+Downloading tokenizers-0.22.2-cp39-abi3-win_amd64.whl (2.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.7/2.7 MB 62.1 kB/s  0:00:47
+Downloading faiss_cpu-1.13.2-cp313-cp313-win_amd64.whl (18.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.9/18.9 MB 45.6 kB/s  0:07:01
+Downloading numpy-2.4.4-cp313-cp313-win_amd64.whl (12.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━╺━━━━━━━━━━━━━ 8.1/12.3 MB 13.8 kB/s eta 0:05:05
+WARNING: Connection timed out while downloading.
+WARNING: Attempting to resume incomplete download (8.1 MB/12.3 MB, attempt 1)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B6BD2B890>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7739BB10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7739B4D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Attempting to resume incomplete download (8.1 MB/12.3 MB, attempt 2)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7124AAD0>: Failed to establish a new connection: [Errno 11004] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883C2D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883C550>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883C7D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883CA50>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Attempting to resume incomplete download (8.1 MB/12.3 MB, attempt 3)
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883CCD0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x0000024B7883D1D0>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
+WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/57/fb/48649b4971cde70d817cf97a2a2fdc0b4d8308569f1dd2f2611959d2e0cf/numpy-2.4.4-cp313-cp313-win_amd64.whl
