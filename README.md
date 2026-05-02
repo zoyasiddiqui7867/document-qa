@@ -3,6 +3,7 @@
 > Upload a PDF. Ask questions. Get answers — 100% locally, no internet required.
 >
 > demo: https://www.loom.com/share/89580285dd5b4af4bdf443cfb4e6055a
+> https://www.loom.com/share/70e6afe8ddb84d84aa6a23ea6ec022be
 
 
 
